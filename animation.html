@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>info</title>
+    <style>
+        html, body{
+            width: 100%; 
+            height: 100%;
+        }
+        #header{
+            height:20%; 
+            background-color: blueviolet; 
+            padding-top: 10px;
+        }
+        h1{
+            font-size: 50px; 
+            text-align: center;
+        }
+        #nav{
+            width: 15%; 
+            height: 70%; 
+            background-color: burlywood; 
+            float: left;
+        }
+        #footer{
+            height: 10%;
+            background-color: coral; 
+            clear: both;
+        }
+        #container{
+            width: 85%; 
+            height: 70%; 
+            float: right;
+        }
+        #container ul{
+            list-style: circle;
+        }
+        img {
+            width: 150px;
+            height: 150px; 
+            margin-top: 10px; 
+            margin-right: 5px; 
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+        #container ul:active{
+            display: none;
+        }
+        #container div{
+            width: 100px;
+            height: 100px;
+            background-color: dodgerblue;
+            position: relative;
+            animation-name: ex;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes ex{
+            0%{
+                background-color: lightskyblue;
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                background-color: lightsteelblue;
+                left: 200px;
+                top: 0px;
+            }
+            50%{
+                background-color: slateblue;
+                left: 200px;
+                top: 200px;
+            }
+            75%{
+                background-color: plum;
+                left: 0px;
+                top: 200px;
+            }
+            100%{
+                background-color: rgb(14, 105, 209);
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+            <h1>신건우 학교</h1>
+    </div>
+    <div id="nav">
+            <ul>
+                <li>이름:신건우</li>
+                <li>나이:17</li>
+                <li>생일:2005.05.19</li>
+                <li>희망학과: 경영학과</li>
+            </ul>
+    </div>
+    <div id="container">
+        <h2>Todo list</h2>
+        <ul>
+            <li>온라인 수업 듣기</li>
+            <li>수행평가 준비하기</li>
+            <li>학원 다녀오기</li>
+        </ul>
+        <hr>
+        <div></div>
+    </div>
+    <div id="footer">
+        https://github.com/sehwacutty/homepage.git
+    </div>
+    
+</body>
+</html>
